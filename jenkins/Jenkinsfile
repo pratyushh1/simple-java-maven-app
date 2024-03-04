@@ -11,6 +11,11 @@ pipeline {
                 echo 'Complete'
             }
         }
+        stage('Completed again') {
+            steps {
+                echo 'Complete again'
+            }
+        }
         stage('Test') {
             steps {
                 sh 'mvn test'
